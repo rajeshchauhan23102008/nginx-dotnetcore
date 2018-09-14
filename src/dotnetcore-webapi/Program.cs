@@ -19,6 +19,7 @@ namespace dotnetcore_webapi
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
+                .UseUrls("https://*:5002")
                 .UseStartup<Startup>();
     }
 }
